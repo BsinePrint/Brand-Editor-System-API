@@ -10,9 +10,11 @@ router.get('/', async (req, res) => {
   )
 })
 
-router.get('/', async (req, res) => {
+
+router.post('/', async (req, res) => {
   
-  const result = await Controller.find().sort({_id: -1}).limit(120)
+  console.log(req.body)
+  const result = await Controller.create(req.body)
 
   res.json(
     result
@@ -22,6 +24,15 @@ router.get('/', async (req, res) => {
 router.get('/', async (req, res) => {
   
   const result = await Controller.find().sort({_id: -1}).limit(120)
+
+  res.json(
+    result
+  )
+})
+
+router.get('/:id', async (req, res) => {
+  
+  const result = await Controller.findOne({_id: req.params.id}).sort({_id: -1}).limit(120)
 
   res.json(
     result

@@ -2,11 +2,12 @@ const Model = require('./model')
 
 const find = async (req, res) => await Model.find()
 
-const create = async (req, res) => {
+const create = async (data) => {
   
-  return await Model.create()
+  return await Model.create(data)
 }
 
 module.exports = {
-  find
+  find,
+  create
 }
