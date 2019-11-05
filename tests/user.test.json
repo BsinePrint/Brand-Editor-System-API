@@ -1,0 +1,16 @@
+{
+  "acl": {
+    "all_orders": false,
+    "order_to_users": false
+  },
+  "is_responsible": false,
+  "active": true,
+  "name": "Suissa",
+  "email": "jnascimento@gmail.com",
+  "password": "12345678",
+  "avatar": "",
+  "birth": "",
+  "cpf": "",
+  "_id": "5dc16eb2e01bcd2addd6d344",
+  "__v": 0
+}

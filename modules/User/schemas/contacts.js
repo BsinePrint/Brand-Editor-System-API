@@ -2,15 +2,15 @@ module.exports = {
   telephone: {
     ddi: {
       type: String,
-      default: '+55'
+      // default: '+55'
     },
     ddd: {
       type: String,
-      default: '11'
+      // default: '11'
     },
     number: {
       type: String,
-      default: ''
+      // default: ''
     },
     branch: { //ramal
       type: String,
@@ -19,43 +19,43 @@ module.exports = {
   cell_phone: {
     ddi: {
       type: String,
-      default: '+55'
+      // default: '+55'
     },
     ddd: {
       type: String,
-      default: '11'
+      // default: '11'
     },
     number: {
       type: String,
-      default: ''
+      // default: ''
     }
   },
   whatsapp: {
     ddi: {
       type: String,
-      default: '+55'
+      // default: '+55'
     },
     ddd: {
       type: String,
-      default: '11'
+      // default: '11'
     },
     number: {
       type: String,
-      default: ''
+      // default: ''
     },
   },
   skype: {
     ddi: {
       type: String,
-      default: '+55'
+      // default: '+55'
     },
     ddd: {
       type: String,
-      default: '11'
+      // default: '11'
     },
     number: {
       type: String,
-      default: ''
+      // default: ''
     }
   }
 }

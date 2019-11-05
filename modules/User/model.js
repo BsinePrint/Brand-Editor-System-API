@@ -20,30 +20,26 @@ const images = require('./schemas/images')
 
 const client_cod = { 
   type: String,
-  default: '',
+  // default: '',
 }
 
 const PF = {
   client_cod,
   nick: { 
     type: String,
-    default: '',
+    // default: '',
   },
   cpf: { 
     type: String,
-    default: '',
+    // default: '',
   },
   gender: { 
     type: String,
-    default: 'm',
+    // default: 'm',
   },
   birth: { 
     type: String,
-    default: '',
-  },
-  cpf: { 
-    type: String,
-    default: '',
+    // default: '',
   },
   
   address: __ADDRESS,

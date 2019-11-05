@@ -21,9 +21,40 @@ router.post('/', async (req, res) => {
   )
 })
 
+
+router.post('/pj', async (req, res) => {
+  
+  console.log(req.body)
+  const result = await Controller.create(req.body)
+
+  res.json(
+    result
+  )
+})
+
+
+router.post('/pf', async (req, res) => {
+  
+  console.log(req.body)
+  const result = await Controller.createPF(req.body)
+
+  res.json(
+    result
+  )
+})
+
 router.get('/', async (req, res) => {
   
   const result = await Controller.find().sort({_id: -1}).limit(120)
+
+  res.json(
+    result
+  )
+})
+
+router.get('/pf', async (req, res) => {
+  
+  const result = await Controller.findPF()
 
   res.json(
     result

@@ -1,46 +1,46 @@
 module.exports = {
   type: {
     type: String, // loja ou residencia
-    default: 'loja'
+    // default: 'loja'
   },
   zip_code: {
     type: String,
-    default: ''
+    // default: ''
   },
   uf: {
     type: String,
-    default: 'SP'
+    // default: 'SP'
   },
   city: {
     type: String,
-    default: ''
+    // default: ''
   },
   street: {
     type: String,
-    default: ''
+    // default: ''
   },
   number: {
     type: String,
-    default: ''
+    // default: ''
   },
   district: {
     type: String,
-    default: ''
+    // default: ''
   },
   complement1: {
     type: String,
-    default: ''
+    // default: ''
   },
   complement2: {
     type: String,
-    default: ''
+    // default: ''
   },
   country: {
     type: String,
-    default: 'Brasil'
+    // default: 'Brasil'
   },
   note: {
     type: String,
-    default: ''
+    // default: ''
   }
 }
