@@ -56,7 +56,7 @@ router.get('/', async (req, res) => {
 
 router.get('/pf', async (req, res) => {
   
-  const result = await ControllerPF.findPF()
+  const result = await ControllerPF.find()
 
   res.json(
     result
@@ -65,7 +65,7 @@ router.get('/pf', async (req, res) => {
 
 router.get('/pf/:id', async (req, res) => {
   
-  const result = await ControllerPF.findOnePF({_id: req.params.id})
+  const result = await ControllerPF.findOne({_id: req.params.id})
 
   res.json(
     result
