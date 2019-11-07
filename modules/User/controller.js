@@ -6,7 +6,7 @@ const bcrypt = require('bcrypt')
 
 const find = async (req, res) => await Model.find()
 const findPF = async (req, res) => {
-  await ModelPF.find()
+  return await ModelPF.find()
 }
 const findPJ = async (req, res) => await ModelPJ.find()
 
