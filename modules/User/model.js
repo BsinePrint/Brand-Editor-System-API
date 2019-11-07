@@ -11,6 +11,7 @@ const ObjectId = mongoose.Schema.Types.ObjectId;
 // })
 
 const name = 'user'
+// require('./model.pf')
 
 const __ACL = require('./schemas/acl')
 const __ADDRESS = require('./schemas/address')
@@ -23,53 +24,53 @@ const client_cod = {
   // default: '',
 }
 
-const PF = {
-  client_cod,
-  nick: { 
-    type: String,
-    // default: '',
-  },
-  cpf: { 
-    type: String,
-    // default: '',
-  },
-  gender: { 
-    type: String,
-    // default: 'm',
-  },
-  birth: { 
-    type: String,
-    // default: '',
-  },
+// const PF = {
+//   client_cod,
+//   nick: { 
+//     type: String,
+//     // default: '',
+//   },
+//   cpf: { 
+//     type: String,
+//     // default: '',
+//   },
+//   gender: { 
+//     type: String,
+//     // default: 'm',
+//   },
+//   birth: { 
+//     type: String,
+//     // default: '',
+//   },
   
-  address: __ADDRESS,
-  contacts
-}
+//   address: __ADDRESS,
+//   contacts
+// }
 
-const PJ = {
-  client_cod,
-  nick: { 
-    type: String,
-  },
-  cnpj: { 
-    type: String,
-  },
-  state_registration: { 
-    type: String,
-  },
-  role: { // cargo 
-    type: String,
-  },
-  email_contact: { // email contato
-    type: String,
-  },
-  email_store: { // email loja
-    type: String,
-  },
+// const PJ = {
+//   client_cod,
+//   nick: { 
+//     type: String,
+//   },
+//   cnpj: { 
+//     type: String,
+//   },
+//   state_registration: { 
+//     type: String,
+//   },
+//   role: { // cargo 
+//     type: String,
+//   },
+//   email_contact: { // email contato
+//     type: String,
+//   },
+//   email_store: { // email loja
+//     type: String,
+//   },
   
-  contacts
+//   contacts
 
-}
+// }
 
 const __SCHEMA = {
   acl: __ACL,
@@ -112,11 +113,11 @@ const __SCHEMA = {
     default: ''
   },
   contacts,
-  PF,
-  PJ
+  // PF,
+  // PJ
 }
 
 const schema = new mongoose.Schema(__SCHEMA)
-const userModel = mongoose.model(name, schema)
+const userModel = mongoose.model('user', schema)
 
 module.exports = userModel

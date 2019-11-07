@@ -2,7 +2,9 @@ const express = require('express')
 const router = express.Router()
 const axios = require('axios')
 
+
 const Controller = require('./controller')
+const ControllerPF = require('./controller.pf')
 router.get('/', async (req, res) => { 
 
   res.json(
@@ -36,7 +38,7 @@ router.post('/pj', async (req, res) => {
 router.post('/pf', async (req, res) => {
   
   console.log(req.body)
-  const result = await Controller.createPF(req.body)
+  const result = await ControllerPF.createPF(req.body)
 
   res.json(
     result
@@ -54,7 +56,16 @@ router.get('/', async (req, res) => {
 
 router.get('/pf', async (req, res) => {
   
-  const result = await Controller.findPF()
+  const result = await ControllerPF.findPF()
+
+  res.json(
+    result
+  )
+})
+
+router.get('/pf/:id', async (req, res) => {
+  
+  const result = await ControllerPF.findOnePF({_id: req.params.id})
 
   res.json(
     result

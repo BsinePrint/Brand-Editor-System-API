@@ -10,6 +10,9 @@ db.once('open', function() {
   console.log('Conectado no MongoDB, db: ' + DB)
 })
 
+require('./modules/User/model')
+// require('./modules/User/model.pf')
+// require('./modules/User/model')
 
 const createError = require('http-errors')
 const express = require('express')
